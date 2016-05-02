@@ -39,9 +39,9 @@ public class RequestService {
     }
 
     //Prueba de concepto del envio de un request con un header.
-    public ClientResponse getBookAndSendHeader(String filter, String value, String header){
+    public ClientResponse getBookAndSendHeader(String filter, String value, String header, String headerValue){
         ClientResponse response = this.client.resource(API_GOOGLE).path(RESOURCE)
-                .queryParam("q",filter + ":" + value).header("TestHeader", header)
+                .queryParam("q",filter + ":" + value).header(header, headerValue)
                 .accept(MediaType.APPLICATION_JSON)
                 .get(ClientResponse.class);
         return response;
