@@ -1,3 +1,5 @@
+package get;
+
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
@@ -8,13 +10,13 @@ import javax.ws.rs.core.MediaType;
 *  https://www.googleapis.com/books/v1/volumes/?q=isbn:9706434526&fields=totalItems,items(id,volumeInfo(title,publishedDate))
 * */
 
-public class RequestService {
+public class GetRequestService {
     private Client client;
     private static final String API_GOOGLE = "https://www.googleapis.com/books/v1";
     private static final String RESOURCE = "volumes";
 
     //Inicializacion del cliente.
-    public RequestService() {
+    public GetRequestService() {
         this.client = Client.create();
         //En la documentacion se puede ver como al cliente agregarle un ClientConfig
         //para agregarle filtros en las respuestas (por ejemplo, para loguear).
