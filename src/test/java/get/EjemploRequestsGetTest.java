@@ -9,13 +9,13 @@ import static org.junit.Assert.*;
 /**
  * Created by niko118 on 5/1/16.
  */
-public class GetRequestServiceTest {
+public class EjemploRequestsGetTest {
 
-    GetRequestService requester;
+    EjemploRequestsGet requester;
 
     @Before
     public void setUp() throws Exception {
-        this.requester = new GetRequestService();
+        this.requester = new EjemploRequestsGet();
     }
 
     @Test

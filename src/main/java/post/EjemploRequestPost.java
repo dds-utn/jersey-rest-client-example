@@ -10,14 +10,14 @@ import com.sun.jersey.api.client.WebResource;
 
 import javax.ws.rs.core.MediaType;
 
-public class PostRequestService {
+public class EjemploRequestPost {
 
     private final Client client;
     private static final String API_TYPICODE = "https://my-json-server.typicode.com/typicode/demo";
     private static final String RESOURCE = "comments";
 
     //Inicializacion del cliente.
-    public PostRequestService() {
+    public EjemploRequestPost() {
         this.client = Client.create();
         //En la documentacion se puede ver como al cliente agregarle un ClientConfig
         //para agregarle filtros en las respuestas (por ejemplo, para loguear).

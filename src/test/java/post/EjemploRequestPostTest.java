@@ -7,13 +7,13 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class PostRequestServiceTest {
+public class EjemploRequestPostTest {
 
-    PostRequestService requester;
+    EjemploRequestPost requester;
 
     @Before
     public void setUp() throws Exception {
-        this.requester = new PostRequestService();
+        this.requester = new EjemploRequestPost();
     }
 
     @Test
