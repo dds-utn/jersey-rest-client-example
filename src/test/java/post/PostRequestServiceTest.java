@@ -17,7 +17,7 @@ public class PostRequestServiceTest {
     }
 
     @Test
-    public void obtenerConUnFiltro() throws Exception {
+    public void crearUnComentario() throws Exception {
         //Se solicita todos los datos de un libro por su isbn.
         ClientResponse response = this.requester.createComment("Test comment");
         assertEquals(response.getStatus(), 201);
