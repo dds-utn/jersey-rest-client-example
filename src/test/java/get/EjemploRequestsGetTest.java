@@ -25,7 +25,7 @@ public class EjemploRequestsGetTest {
         assertEquals(response.getStatus(), 200);
         String json = response.getEntity(String.class);
         assertTrue(json.contains("items"));
-        assertTrue(json.contains("Tio Tom"));
+        assertTrue(json.contains("Tío Tom"));
     }
 
     @Test
